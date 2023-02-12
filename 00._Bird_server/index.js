@@ -3,6 +3,8 @@ const app = express();
 
 app.use(express.json());
 
+//todo Bird "database"
+
 //todo Get all birds
 
 //todo Get one bird
