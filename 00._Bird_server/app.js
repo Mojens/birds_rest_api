@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     +`<h2>Available routes:</h2>`+
     `<h3>
     <br>/birds`+
-    `<br>/birds/:id`+
+    `<br>/birds/id`+
     `<br>/birds?type=type`+
     `<br>/birds?color=color`+
     `<br>/birds?type=type&color=color
