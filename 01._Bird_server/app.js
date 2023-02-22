@@ -62,14 +62,14 @@ app.patch('/birds/:id', (req, res) => {
 app.delete('/birds/:id', (req, res) => {
     const bird = Birds.find(b => b.id === parseInt(req.params.id));
     if (!bird) {
-      res.status(404).send(`Could not find Bird with ID: ${req.params.id}.`);
-      return;
+        res.status(404).send(`Could not find Bird with ID: ${req.params.id}.`);
+        return;
     }
     const index = Birds.indexOf(bird);
     Birds.splice(index, 1);
     res.send(`Deleted bird with ID ${req.params.id}.`);
-  });
-  
+});
+
 
 app.listen(8080, () => {
     console.log('Server started on port 8080');
